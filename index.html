@@ -64,7 +64,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="#lifecycle" class="nav-link">
                 <span class="d-inline-block mr-3">Lifecycle Methods</span>
                 <span class="d-inline-block tm-white-rect"></span>
               </a>
@@ -133,7 +133,7 @@
             </section>
           </div>
         </div>
-<!--why learn react-->
+        <!--why learn react-->
         <div class="tm-section-wrap bg-white">
           <section id="about" class="row tm-section">
             <div class="col-xl-6">
@@ -164,8 +164,8 @@
                 </p>
               </div>
             </div>
-  <!--why learn react end-->
-<!--Setup start -->
+            <!--why learn react end-->
+            <!--Setup start -->
             <div class="col-xl-6">
               <div class="tm-section-half">
                 <div><i class="far fa-6x fa-building mb-5 tm-section-icon"></i></div>
@@ -197,7 +197,7 @@
             </div>
           </section>
         </div>
-<!--setup end-->
+        <!--setup end-->
 
         <!--components start-->
         <div class="tm-section-wrap bg-white">
@@ -362,80 +362,128 @@
           <img src="img/gallery/s12.PNG" class="img-fluid" alt="Responsive image">
           <p><b>Output:</b></p>
           <img src="img/gallery/s23.PNG" class="img-fluid" alt="Responsive image"></p>
-        </div>
-        </ol>
 
-        <!--state-->
-
-          <p>
-          <h2 class="tm-color-primary tm-section-title mb-4">States</h2>
-          </p>
+          <!--state-->
+          <h2 class="tm-color-primary tm-section-title mb-4">State</h2>
           <p>React components has a built-in state object.
             The state object is where you store property values that belongs to the component.
             When the state object changes, the component re-renders.</p>
-          <p><b>1. Creating a State Object:</b></p>
-        
-        <p><b>Example:</b></p>
-        <p>Here again we use the constructor funtion to initialize the 
-          state
-        </p>
-        <img src="img/gallery/s9.PNG" class="img-fluid" alt="Responsive image">
-        <img src="img/gallery/s10.PNG" class="img-fluid" alt="Responsive image">
-        <p><b>Output:</b></p>
-        <img src="img/gallery/s11.PNG" class="img-fluid" alt="Responsive image">
-        <li>
-          <b>
-            <p>2. props with class componet </p>
-          </b>
-        </li>
-
-        <img src="img/gallery/s12.PNG" class="img-fluid" alt="Responsive image">
-        <img src="img/gallery/s13.PNG" class="img-fluid" alt="Responsive image">
-        <p><b>Output:</b></p>
-        <img src="img/gallery/s14.PNG" class="img-fluid" alt="Responsive image">
-
-        <b>
-          <p>3. Send some property from one component to another component </p>
-        </b>
-
-        <p>In this example i have created a component named Classcmp.js
-          and also another component named Classcmptwo (this is the child component of Classcmp)
-          this is called Nested class components where we can create a component inside the
-          components and can call them in their parent components.
-          and for Classcmptwo i gave a prop as color and pass the data from Classcmp to Classcmptwo.
-        </p>
-        <img src="img/gallery/s15.PNG" class="img-fluid" alt="Responsive image">
-        <p>No change required in APP.js</p>
-        <p><b>Output:</b></p>
-        <img src="img/gallery/s16.PNG" class="img-fluid" alt="Responsive image">
-        <b>
-          <p>4. If you have a variable to send, and not a string as in the example above, you just put the variable
-            name inside curly brackets:</p>
-        </b>
-
-        <img src="img/gallery/s17.PNG" class="img-fluid" alt="Responsive image">
-        <p>No change is required in App.js</p>
-        <p><b>Output:</b></p>
-        <img src="img/gallery/s18.PNG" class="img-fluid" alt="Responsive image"></p>
-        <p><b>5. if it was an object:</b></p>
-        <img src="img/gallery/s19.PNG" class="img-fluid" alt="Responsive image">
-        <p>No change is required in App.js</p>
-        <p><b>Output:</b></p>
-        <img src="img/gallery/s20.PNG" class="img-fluid" alt="Responsive image"></p>
-      </div>
-      
-        
-      
-    </div>
-        <a href="">Q&A</a>
-    </div>
+          <p><b>1. Crating State Object</b></p>
+          <img src="img/gallery/s24.PNG" class="img-fluid" alt="Responsive image">
+          <p>state object can contain many properties</p>
+          <p><b>2. using state object (by Refering to the state object in the render() method:) </b></p>
+          <img src="img/gallery/s25.PNG" class="img-fluid" alt="Responsive image">
+          <p><b>Output:</b></p>
+          <img src="img/gallery/s26.PNG" class="img-fluid" alt="Responsive image"></p>
+          <p><b>3. Changing the state Object:</b></p>
+          <p>To change a value in the state object, use the this.setState() method.
+            When a value in the state object changes, the component will re-render,
+            means that the output will change according to the new value(s).
+          </p>
+          <p><b>Example:</b></p>
+          <p>In this example we will use <a href="">onClick event</a>and use
+            it with a button when i click the button the state will be changed
+            by the this.setState()</p>
+          <img src="img/gallery/s27.PNG" class="img-fluid" alt="Responsive image">
+          <p><b>Output:</b></p>
+          <img src="img/gallery/s28.PNG" class="img-fluid" alt="Responsive image">
+          <p>after ckicking the button:</p>
+          <img src="img/gallery/s29.PNG" class="img-fluid" alt="Responsive image">
+          <p>Note: Always use the setState() method to change the state object,
+            it will ensure that the component knows its been updated and calls the render()
+            method (and all the other lifecycle methods).</p>
+        </div>
     </div>
     </div>
     </div>
     </section>
     </div>
-<!--contact form-->
-   <!-- <div class="tm-section-wrap bg-white">
+<!--state props end-->
+
+<!--Lifecycle methods start-->
+
+<div class="tm-section-wrap bg-white">
+  <section id="lifecycle" class="row tm-section">
+    <div class="col-12 tm-section-pad">
+      <div class="tm-flex-item-left">
+        <div class="tm-w-80">
+          <h2 class="tm-color-primary tm-section-title mb-4">Lifecycle Methods</h2>
+          <p class="mb-5">
+            Each component in React has a lifecycle which you can monitor
+             and manipulate during its three main phases.<br />
+             The three phases are:
+          <ol>
+            <li>Mounting</li>
+            <li>Updating</li>
+            <li>Unmounting</li>
+          </ol>
+          </p>
+          <p>
+          <h2 class="tm-color-primary tm-section-title mb-4">Mounting</h2>
+          </p>
+          <p>Mounting means putting elements into the DOM.
+            React has four built-in methods that gets called, in this order, when mounting a component:</p>
+          <p>
+            <ol>
+              <li>constructor()</li>
+              <li>getDerivedStateFromProps()</li>
+              <li>render()</li>
+              <li>componentDidMount()</li>
+            </ol>
+          </p>
+            <b>
+            <p>Syntax:</p>
+          </b>
+          <div class="tm-double-border-1 tm-border-gray" style="padding: 0%; margin: 0%;">
+            <div class="tm-double-border-2 tm-border-gray tm-box-pad">
+              <img src="img/gallery/s1.PNG" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><br />
+          <p><b>Example:</b></p>
+          <p>open vs code and create a new folder named component.
+            and then with in that folder i am creating a js file name Functioncmp.js
+          </p>
+          <img src="img/gallery/s3.PNG" class="img-fluid" alt="Responsive image">
+          <img src="img/gallery/s4.PNG" class="img-fluid" alt="Responsive image">
+          <p><b>Output:</b></p>
+          <img src="img/gallery/s5.PNG" class="img-fluid" alt="Responsive image">
+        </div>
+        <!--class component-->
+        <div class="tm-w-80">
+          <p>
+          <h2 class="tm-color-primary tm-section-title mb-4">Class Components</h2>
+          </p>
+          <p>Class components are little more complex than funtional.
+            functional components are not aware of other components whereas class components
+            can work with each-other and can pass the data from one component to other.
+            class component is statefull component.
+          </p>
+          <b>
+            <p>Syntax:</p>
+          </b>
+          <div class="tm-double-border-1 tm-border-gray" style="padding: 0%; margin: 0%;">
+            <div class="tm-double-border-2 tm-border-gray tm-box-pad">
+              <img src="img/gallery/s2.PNG" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><br />
+          <p><b>Example:</b></p>
+          <p>click on the component folder that we created earlier
+            and then with in that folder i am creating a js file name Classcmp.js
+          </p>
+          <img src="img/gallery/s6.PNG" class="img-fluid" alt="Responsive image">
+          <img src="img/gallery/s7.PNG" class="img-fluid" alt="Responsive image">
+          <p><b>Output:</b></p>
+          <img src="img/gallery/s8.PNG" class="img-fluid" alt="Responsive image">
+        </div><br />
+        <a href="">Q&A</a>
+      </div>
+    </div>
+</div>
+</section>
+</div>
+
+    <!--contact form-->
+    <!-- <div class="tm-section-wrap bg-white">
       <section id="talk" class="row tm-section">
         <div class="col-xl-6 mb-5">
           <div class="tm-double-border-1 tm-border-gray">
